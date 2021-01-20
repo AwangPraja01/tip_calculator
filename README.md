@@ -8,7 +8,7 @@ You can see the results of this project by opening the following link https://co
 Tools used to make this tip calculator application are as follows :
 * Visual Studio Code
 
-# Language :
+# Language :computer:
 The language used in making this tip calculator is as follows :
 * HTML
 * CSS
