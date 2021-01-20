@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #3b064d;
+}
+
+.container {
+  border: 5px solid #8105d8;
+  outline: none;
+  background: #3b064d;
+  width: max-content;
+  height: max-content;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.app_section_1 {
+  width: 100%;
+  outline: none;
+}
+
+.app_section_2 {
+  padding: 10px 20px;
+}
+
+.title_app {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #3b064d;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  display: block;
+}
+
+.creator_app {
+  display: block;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #8105d8;
+}
+
+.field_description {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  margin: 0.5em 0;
+  color: #fff;
+}
+
+.bill {
+  display: flex;
+}
+
+.dolar_sign {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-inline-end: 10px;
+  align-self: center;
+  color: white;
+}
+
+.people_sign {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-inline-start: 10px;
+  align-self: center;
+  color: white;
+}
+
+.bill_amount,
+.service,
+.number_of_people {
+  width: max-content;
+  height: 2.5em;
+  padding: 10px;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.submit_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.calculate_btn {
+  justify-self: center;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  border: none;
+  width: 50%;
+  padding: 7px 20px;
+  background: #8105d8;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.calculate_btn:active {
+  background: #8005d8be;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.hidden_result {
+  display: none;
+}
+
+.result h3 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.result h4 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+input,
+select {
+  background: #e8eae6;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.each_sign {
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  .title_app {
+    font-size: 1.5em;
+  }
+
+  .creator_app {
+    font-size: 0.8em;
+  }
+
+  .bill_amount,
+  .service,
+  .number_of_people {
+    height: 1.8em;
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .people_sign,
+  .calculate_btn,
+  .field_description {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  body {
+    padding: 0 10px;
+  }
+}

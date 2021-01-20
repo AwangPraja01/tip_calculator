@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./tip_calculator_style.css" />
+
+    <title>Tip Calculator By Awang Praja Anugerah</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app_section_1">
+        <span class="title_app">Tip Calculator</span>
+      </div>
+
+      <span class="creator_app">by Awang Praja Anugerah</span>
+      <div class="app_section_2">
+        <form class="tip_calculator_form">
+          <h3 class="field_description">How much is your bill ?</h3>
+          <div class="bill">
+            <span class="dolar_sign">$</span>
+            <input type="text" class="bill_amount" />
+          </div>
+
+          <h3 class="field_description">How about the service ?</h3>
+          <select name="service" class="service">
+            <option disabled>Please choose an option</option>
+            <option value="0.3">30 % - Incredible</option>
+            <option value="0.2">20 % - Very Good</option>
+            <option value="0.15">15 % - Good</option>
+            <option value="0.1">10 % - Bad</option>
+            <option value="0.05">5 % - Worst</option>
+          </select>
+
+          <h3 class="field_description">
+            How many people are sharing the bill?
+          </h3>
+          <input type="number" min="1" max="10" class="number_of_people" />
+          <span class="people_sign">people</span>
+          <br />
+
+          <div class="submit_btn">
+            <button type="submit" class="calculate_btn">Calculate</button>
+          </div>
+        </form>
+
+        <!-- Result of how much tip you have to give -->
+        <div class="hidden_result">
+          <div class="result">
+            <h3>Tip Amount</h3>
+            <h4>
+              $ <span class="amount_tip"></span>
+              <span class="each_sign">Each</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./tip_calculator_script.js"></script>
+</html>
