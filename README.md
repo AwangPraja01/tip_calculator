@@ -5,5 +5,11 @@ Whenever I go out to eat and I'm having a hard time calculating the right tip, I
 You can see the results of this project by opening the following link https://codepen.io/Darkcode0110/full/vYXPaJo
 
 # Tools :hammer_and_wrench:
-Tools used in the processing of this award page is as follows :
+Tools used to make this tip calculator application are as follows :
 * Visual Studio Code
+
+# Language :
+The language used in making this tip calculator is as follows :
+* HTML
+* CSS
+* Javascript
